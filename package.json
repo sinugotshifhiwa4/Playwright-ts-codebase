@@ -1,0 +1,53 @@
+{
+  "dependencies": {
+    "axios": "^1.7.8",
+    "cross-env": "^7.0.3",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "moment-timezone": "^0.5.46",
+    "ortoni-report": "^2.0.8",
+    "playwright": "^1.49.0",
+    "typescript-eslint": "^8.16.0",
+    "winston": "^3.17.0"
+  },
+  "name": "playwright-ts-codebase",
+  "version": "1.0.0",
+  "description": "A comprehensive codebase for setting up UI, API, and database setup, supporting unit, integration, and end-to-end (E2E) automation workflows.",
+  "main": "index.js",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^22.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "pretest:setup": "tsc --noEmit && eslint tests/**",
+    "pretest:key": "tsc --noEmit && eslint tests/**",
+    "pretest:encrypt": "tsc --noEmit && eslint tests/**",
+    "pretest:uat": "tsc --noEmit && eslint tests/**",
+    "test:setup": "cross-env ENV=uat npx playwright test session.setup.ts",
+    "test:key": "cross-env ENV=uat npx playwright test GenerateKey.spec.ts",
+    "test:encrypt": "cross-env ENV=uat npx playwright test Encryption.spec.ts",
+    "test:uat": "cross-env ENV=uat npx playwright test"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "dotenv",
+    "cross-env",
+    "eslint",
+    "crypto-js",
+    "winston",
+    "logging",
+    "axios",
+    "api",
+    "ui",
+    "database",
+    "mssql",
+    "@azure/identity"
+  ],
+  "author": "Tshifhiwa Sinugo",
+  "license": "ISC"
+}

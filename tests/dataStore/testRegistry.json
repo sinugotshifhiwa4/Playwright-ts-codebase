@@ -1,0 +1,12 @@
+{
+  "TEST_CATEGORIES": {
+    "INCOME_AND_EXPENSES": {
+      "INCOME": {
+        "INCOME_TEST_1": "Test_1"
+      },
+      "EXPENSES": {
+        "EXPENSES_TEST_1": "Test_1"
+      }
+    }
+  }
+}
