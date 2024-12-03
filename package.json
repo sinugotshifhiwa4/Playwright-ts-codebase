@@ -1,10 +1,12 @@
 {
   "dependencies": {
+    "@azure/identity": "^4.5.0",
     "axios": "^1.7.8",
     "cross-env": "^7.0.3",
     "crypto-js": "^4.2.0",
     "dotenv": "^16.4.5",
     "moment-timezone": "^0.5.46",
+    "mssql": "^11.0.1",
     "ortoni-report": "^2.0.8",
     "playwright": "^1.49.0",
     "typescript-eslint": "^8.16.0",
@@ -17,6 +19,7 @@
   "devDependencies": {
     "@playwright/test": "^1.49.0",
     "@types/crypto-js": "^4.2.2",
+    "@types/mssql": "^9.1.5",
     "@types/node": "^22.10.1",
     "@typescript-eslint/eslint-plugin": "^8.16.0",
     "@typescript-eslint/parser": "^8.16.0",
